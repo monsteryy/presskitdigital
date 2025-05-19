@@ -183,8 +183,8 @@ h2 {
 .bio-content p {
     margin-bottom: 25px;
     line-height: 1.8;
-    font-size: 1.1em;
-    text-align: center;
+    /* font-size: 1.1em; */
+    /* text-align: center; */
 }
 
 .social-links {
@@ -734,113 +734,3 @@ h2 {
     background-color: #1ebe5d;
     box-shadow: 0 4px 16px rgba(0,0,0,0.22);
 } 
-
-
-
-
-
-/* ###################################################################### */
-/* ###################################################################### */
-/* ###################################################################### */
-/* ###################################################################### */
-/* ###################################################################### */
-/* ###################################################################### */
-
-body{
-    background-color: red;
-}
-.bg{
-    background-image: url('assets/imgs/cover.jpg');
-    background-size: cover;
-    background-position: center top;
-    height: 80vmax;
-    padding: 0;
-}
-
-.overlay{
-    background-color: black;
-    width: inherit;
-    height: inherit;
-    opacity: .6;
-    position: absolute;
-}
-
-div#logo img{
-    height:16em;
-}
-
-.container-height-inherit{
-    height: inherit;
-    /* top: 25%; */
-}
-
-a i{
-    text-decoration: none;
-    color: #cfcfcf;
-    font-size: 1.5em;
-    transition: all .3s;
-}
-
-a:hover i.bi-spotify{
-    color:#1ED760;
-}
-
-a i.bi-instagram{
-    border-radius: .3em;
-    background: transparent;
-}
-a:hover i.bi-instagram{
-    background:linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-}
-
-a:hover i.bi-whatsapp{
-    color:#28D146;
-}
-
-a:hover i{
-    color:white;
-    font-size: 2em;
-    transition: all .3s;
-}
-
-
-video{background-color: #1c1c1c;}
-
-.background-video{
-    background-image: url('assets/videos/video1.mp4');
-    background-size: cover;
-    background-position: center top;
-    height: 80vmax;
-    padding: 0;
-}
-
-.gallery-col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    width: 100%;
-    max-width: 900px;
-    background-color: red;
-}
-
-.gallery-col img {
-    width: 100%;
-    height: -webkit-fill-available;
-    object-fit: cover;
-    box-shadow: 0 2px 16px rgba(0,0,0,0.3);
-    transition: transform 0.3s, box-shadow 0.3s;
-    background: #222;
-}
-
-.gallery-col img:hover{
-    height: 100%;
-    transition: all 2s;
-}
-
-section div#bio, section div#contact{
-    background-color: #1c1c1c;
-    color: white;
-}
-
-section div#contact i{
-    color: white;
-}

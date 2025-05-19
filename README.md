@@ -1,0 +1,1 @@
+sass --watch src/scss/styles-alt.scss src/css/styles-alt.css

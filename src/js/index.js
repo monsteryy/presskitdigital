@@ -41,9 +41,10 @@ smoothLinks.forEach(link => {
     });
 });
 
-const myCarouselElement = document.querySelector('#carouselExampleAutoplaying')
+const carouselBio = document.querySelector('#carouselbio')
+// const carouselGallery = document.querySelector('#carouselgallery')
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 2000,
+const carousel = new bootstrap.Carousel(carouselBio, {
+  interval: 3000,
   touch: false
 })

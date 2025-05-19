@@ -1,0 +1,162 @@
+@import 'variables.scss';
+
+body{
+    background-color: $grey-dark !important;
+}
+.bg{
+    background-image: url('../../assets/imgs/cover.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 100vmax;
+    @media(max-width: $grid-max-xxs){
+        background-position: 26% top;
+    }
+    @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+        background-position: 26% top;
+        height: 100vmax;
+    }
+    @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+        // height: 60vmax;
+    }
+    @media(min-width: $grid-min-lg) and (max-width: $grid-max-lg){
+        // height: 80vmax;
+    }
+    @media(min-width: $grid-min-xl){
+        background-position: center top;
+        height: 60vmax;
+    }
+
+    & img{
+        @media(max-width: $grid-max-xxs){
+            height:7em;
+        }
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-xs){
+            height:8em;
+        }
+        @media(min-width: $grid-min-sm) and (max-width: $grid-max-sm){
+            height:12em;
+        }
+        @media(min-width: $grid-min-md) and (max-width: $grid-max-md){
+            height:16em;
+        }
+        @media(min-width: $grid-min-lg){
+            height:20em;
+        }
+        // @media(min-width: $grid-min-xl){
+        //     height: 25em;
+        // }
+    }
+
+    & .intro-subtitle{
+        @media(max-width: $grid-max-xxs){
+            font-size:.8em;
+        }
+        @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+            font-size: .9em;
+        }
+        @media(min-width: $grid-min-xl){
+            background-position: center top;
+        }
+    }
+
+}
+
+.overlay{
+    background-color: $black;
+    width: inherit;
+    height: inherit;
+    opacity: .6;
+    position: absolute;
+}
+
+
+
+.container-height-inherit{
+    // height: inherit;
+    top: 20%;
+    @media(max-width: $grid-max-xxs){
+        top:60%
+    }
+    @media(min-width: $grid-min-xs) and (max-width: $grid-max-sm){
+        top:60%
+    }
+}
+
+a {
+    & i{
+        text-decoration: none;
+        color: $grey-dark-variant;
+        font-size: 1.5em;
+        transition: all .3s;
+        &.bi-instagram{
+            border-radius: .3em;
+            background: transparent;
+        }
+    }
+    &:hover{
+        & i{
+            color:$white;
+            font-size: 2em;
+            transition: all .3s;
+            
+            &.bi-spotify{
+                color: $spotify-color;
+            }
+            &.bi-instagram{
+                background: $instagram-color;
+            }
+            &.bi-whatsapp{
+                color: $whatsapp-color;
+            }
+        }
+    }
+}
+
+video{
+    & #background-video{
+        background-color: $red;
+    }
+}
+
+.gallery-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    width: 100%;
+    max-width: 900px;
+    background-color: $grey-dark;
+    & img {
+        width: 100%;
+        height: -webkit-fill-available;
+        object-fit: cover;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+        background: #222;
+
+        &:hover{
+            height: 100%;
+            transition: all 2s;
+        }
+    }
+}
+
+
+
+section{
+    & div#bio{
+        background-color: #1c1c1c;
+        color: $white;
+        & .carousel-inner{
+            border-radius: 1em;
+            box-shadow: #000 0 1rem 2rem;
+        }
+    }
+}
+
+// section{
+//     & div#contact{
+//         background-color: #1c1c1c;
+//         & i{
+//             color: $white;
+//         }
+//     }
+// }
