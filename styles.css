@@ -183,8 +183,8 @@ h2 {
 .bio-content p {
     margin-bottom: 25px;
     line-height: 1.8;
-    font-size: 1.1em;
-    text-align: center;
+    /* font-size: 1.1em; */
+    /* text-align: center; */
 }
 
 .social-links {
@@ -439,7 +439,7 @@ h2 {
     text-align: center;
 }
 .intro-subtitle {
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #cfcfcf;
     letter-spacing: 1.5px;
     text-align: center;
