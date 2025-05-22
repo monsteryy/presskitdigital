@@ -22,6 +22,16 @@ if(mainVideo) {
         }
     });
 }
+const videoMobile = document.getElementById('background-video-mobile');
+if(videoMobile) {
+    videoMobile.addEventListener('click', function() {
+        if (videoMobile.muted) {
+            videoMobile.muted = false;
+        } else {
+            videoMobile.muted = true;
+        }
+    });
+}
 
 // Rolagem suave para os links do menu
 const smoothLinks = document.querySelectorAll('a.smooth-scroll');
@@ -42,7 +52,6 @@ smoothLinks.forEach(link => {
 });
 
 const carouselBio = document.querySelector('#carouselbio')
-// const carouselGallery = document.querySelector('#carouselgallery')
 
 const carousel = new bootstrap.Carousel(carouselBio, {
   interval: 3000,
